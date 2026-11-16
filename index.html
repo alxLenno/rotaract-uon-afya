@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotaract UoN Afya</title>
+    <meta name="description"
+        content="Rotaract UoN Afya is a youth organization dedicated to community service and health in Nairobi, Kenya.">
+    <script>
+        try {
+            const saved = localStorage.getItem('afya-theme');
+            document.documentElement.dataset.theme = saved === 'dark' || saved === 'light' ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        } catch (_) { document.documentElement.dataset.theme = 'light'; }
+    </script>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=9">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Rotaract UoN Afya home">
+                <svg class="brand-mark" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="42" height="42" rx="11" fill="currentColor"/>
+                    <path d="M11 31 21.3 12h2L33 31h-5l-5.8-12-6.1 12Z" fill="var(--paper)"/>
+                    <path d="M18 27h15" stroke="var(--paper)" stroke-width="2.5"/>
+                </svg>
+                <span class="brand-type"><span class="logo-rotaract">Rotaract<span class="brand-dot">.</span></span><span class="logo-uon">UoN <strong>Afya</strong></span></span>
+            </a>
+            <ul class="nav-menu" id="navigation">
+                <li><a href="#home" class="nav-links">Home</a></li>
+                <li><a href="#about" class="nav-links">About</a></li>
+                <li><a href="#activities" class="nav-links">Activities</a></li>
+                <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                <li><a href="#contact" class="nav-links">Contact</a></li>
+                <li class="mobile-join"><a href="#join" class="nav-links">Join the club</a></li>
+
+            </ul>
+            <div class="nav-actions">            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
+                <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+                <span class="theme-label">Dark</span>
+            </button>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+<a href="#join" class="btn btn-primary nav-join">Join the club</a></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">UNIVERSITY OF NAIROBI · AFYA</p><h1>Small acts.<br>Lasting <span class="highlight-text">impact.</span></h1>
+            <p class="fade-in-up delay-1">A community of young leaders bringing service, health and opportunity closer to the people who need them. Together, we put Service Above Self into practice.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#activities" class="btn btn-primary">Explore our work <span aria-hidden="true">↗</span></a>
+                <a href="#join" class="btn btn-secondary">Join Us</a>
+            </div>
+        </div>
+        <div class="hero-photo" aria-label="Club moments slideshow"><img src="assets/images/hero.jpeg" alt="Members of Rotaract UoN Afya together at a club event"><div class="photo-caption"><span>People. Purpose. Possibility.</span><span id="hero-photo-caption">Rotaract UoN Afya</span></div><div class="hero-slideshow-controls"><button type="button" id="hero-prev" aria-label="Previous hero photo">←</button><span id="hero-photo-count" aria-live="off">01 / 04</span><button type="button" id="hero-next" aria-label="Next hero photo">→</button><button type="button" id="hero-pause" aria-label="Pause slideshow" aria-pressed="false">Pause</button></div></div>
+    </section>
+
+    <div class="identity-strip"><span>ROOTED IN SERVICE</span><span>Community impact</span><span>Professional growth</span><span>Meaningful connections</span></div><!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>A university-based service club part of the global Rotaract movement.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Service Above Self</h3>
+                    <p>The Rotaract Club of UoN Afya is affiliated with the University of Nairobi's Faculty of Health Sciences and forms part of the global Rotaract movement &mdash; an international network of young leaders dedicated to creating positive change through community service, leadership development, professional growth, and international understanding.</p>
+                    <p>Beyond service, the club promotes <strong>fellowship</strong> and personal connections among members. Social activities including adventures, game nights, outings, and recreational events create opportunities for members to build friendships, strengthen teamwork, and enjoy a vibrant club experience outside academic settings.</p>
+                    <p>The club also places significant emphasis on <strong>professional development</strong> through seminars, conferences, mentorship programmes, panel discussions, and professional talks &mdash; preparing members for leadership roles in their careers and communities.</p>
+                    <ul class="core-values">
+                        <li><strong>Fellowship:</strong> Building lifelong friendships through socials and outings.</li>
+                        <li><strong>Leadership:</strong> Developing future leaders through mentorship and professional talks.</li>
+                        <li><strong>Service:</strong> Making meaningful contributions through community projects.</li>
+                    </ul>
+                </div>
+                <div class="about-image-container">
+                    <div class="about-shape"></div>
+                    <img src="assets/images/hero.jpeg" alt="Rotaract Members helping community" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Activities</h2>
+                <p>Making a tangible impact through service, leadership and fellowship.</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-number">01 <span>AFYA / OUR FOCUS</span></div>
+                    <h3>Community Service Projects</h3>
+                    <p>Participating in outreach programmes aimed at improving lives, supporting vulnerable populations, and promoting social responsibility.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-number">02 <span>AFYA / OUR FOCUS</span></div>
+                    <h3>Professional Development</h3>
+                    <p>Seminars, conferences, mentorship programmes, panel discussions, and professional talks that prepare members for leadership roles in their careers.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-number">03 <span>AFYA / OUR FOCUS</span></div>
+                    <h3>Health Initiatives</h3>
+                    <p>Organizing blood donation drives, medical outreaches, and health awareness campaigns in partnership with national health institutions.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-number">04 <span>AFYA / OUR FOCUS</span></div>
+                    <h3>Fellowship &amp; Socials</h3>
+                    <p>Adventures, game nights, outings, and recreational events that build friendships, strengthen teamwork, and create a vibrant club experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Moments from our recent projects and fellowships.</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Financial Literacy Cover -->
+                <div class="gallery-item cover-item" data-images='["assets/images/Financial Workshop/Finacial_Literacy1.jpeg", "assets/images/Financial Workshop/Finacial_Literacy2.jpeg"]'>
+                    <img src="assets/images/Financial Workshop/Finacial_Literacy1.jpeg" alt="Financial Literacy">
+                    <div class="gallery-overlay">
+                        <span>Financial Workshop (2 Photos)</span>
+                    </div>
+                </div>
+
+                <!-- Pad Drive Cover -->
+                <div class="gallery-item cover-item" data-images='["assets/images/Pad Drive Distribution/Joy_Pad Drive.jpeg", "assets/images/Pad Drive Distribution/Pad_Drive3.jpeg", "assets/images/Pad Drive Distribution/Pad_Drive4.jpeg", "assets/images/Pad Drive Distribution/Pad_Drive5.jpeg", "assets/images/Pad Drive Distribution/Pad_Drive6.jpeg", "assets/images/Pad Drive Distribution/Pad_Drive7.jpeg", "assets/images/Pad Drive Distribution/Pad_Drive8.jpeg"]'>
+                    <img src="assets/images/Pad Drive Distribution/Joy_Pad Drive.jpeg" alt="Pad Drive Distribution">
+                    <div class="gallery-overlay">
+                        <span>Pad Drive Distribution (7 Photos)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>How to Join Us</h2>
+                <p>Membership is open to individuals interested in service, leadership, and personal growth.</p>
+            </div>
+            <div class="join-content">
+                <div class="join-card">
+                    <h3>Membership Requirements</h3>
+                    <ul class="join-steps">
+                        <li>
+                            <div class="step-icon">1</div>
+                            <div class="step-text">Declare your interest in joining the <strong>Rotaract Club of UoN Afya</strong>.</div>
+                        </li>
+                        <li>
+                            <div class="step-icon">2</div>
+                            <div class="step-text">Attend at least <strong>three Rotaract meetings</strong> held on designated Thursdays at the University of Nairobi KNH Campus.</div>
+                        </li>
+                        <li>
+                            <div class="step-icon">3</div>
+                            <div class="step-text">Participate in at least one <strong>club service project</strong> (giving back to the community) or one <strong>club social activity</strong> (e.g. game nights, adventures, outings).</div>
+                        </li>
+                        <li>
+                            <div class="step-icon">4</div>
+                            <div class="step-text">Attend at least one meeting of our <strong>Mother Club &mdash; the Rotary Club of Madaraka</strong>, which meets at the Royal Nairobi Golf Club.</div>
+                        </li>
+                    </ul>
+                    <div class="join-actions">
+                        <a href="https://chat.whatsapp.com/FxtTKblHctJBlnKehAOvjX?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Join WhatsApp Group</a>
+                        <a href="#contact" class="btn btn-primary">Contact Us to Join</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch to partner with us or join our club.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>We are always open to new members, partnerships, and sponsorships to further our cause.</p>
+                    <div class="info-item">
+                        <span class="contact-label">Visit</span>
+                        <p>University of Nairobi, Faculty of Health Sciences</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="contact-label">Email</span>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=racafyauon@gmail.com" target="_blank" rel="noopener noreferrer">racafyauon@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="contact-label">Call</span>
+                        <a href="tel:+254110044877">0110 044 877</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row"><div class="form-group">
+                        <label for="name">Your name</label><input type="text" id="name" name="from_name" placeholder="Full name" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label><input type="email" id="email" name="reply_to" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    </div><div class="form-group">
+                        <label for="message">Your message</label><textarea id="message" name="message" rows="6" placeholder="Tell us how you’d like to get involved…" required></textarea>
+                    </div>
+                    <div class="form-actions"><span>We look forward to hearing from you.</span><button type="submit" class="btn btn-primary submit-btn">Send message <span aria-hidden="true">↗</span></button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo" aria-label="Rotaract UoN Afya home">
+                <svg class="brand-mark" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="42" height="42" rx="11" fill="currentColor"/>
+                    <path d="M11 31 21.3 12h2L33 31h-5l-5.8-12-6.1 12Z" fill="var(--paper)"/>
+                    <path d="M18 27h15" stroke="var(--paper)" stroke-width="2.5"/>
+                </svg>
+                <span class="brand-type"><span class="logo-rotaract">Rotaract<span class="brand-dot">.</span></span><span class="logo-uon">UoN <strong>Afya</strong></span></span>
+            </a>
+                    <p>Young leaders. Shared purpose.<br>Lasting community impact.</p>
+                    <span class="footer-motto">Service Above Self</span>
+                </div>
+                <div class="footer-column">
+                    <h2>Explore</h2>
+                    <a href="#about">About the club</a>
+                    <a href="#activities">Our activities</a>
+                    <a href="#gallery">Club moments</a>
+                    <a href="#join">Become a member</a>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h2>Get in touch</h2>
+                    <a href="mailto:racafyauon@gmail.com">racafyauon@gmail.com</a>
+                    <a href="tel:+254110044877">0110 044 877</a>
+                    <p>University of Nairobi<br>Faculty of Health Sciences<br>Nairobi, Kenya</p>
+                </div>
+                <div class="footer-column">
+                    <h2>Follow along</h2>
+                    <a href="https://www.instagram.com/rotaractafya" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.tiktok.com/@rac.uonafya" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
+                    <a href="https://chat.whatsapp.com/FxtTKblHctJBlnKehAOvjX?mode=gi_t" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rotaract Club of UoN Afya</p>
+                <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <button class="lightbox-close" aria-label="Close gallery">Close</button>
+        <button class="lightbox-prev" aria-label="Previous photo">&#10094;</button>
+        <img class="lightbox-content" id="lightbox-img" alt="Club activity photo">
+        <button class="lightbox-next" aria-label="Next photo">&#10095;</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js?v=8"></script>
+</body>
+
+</html>

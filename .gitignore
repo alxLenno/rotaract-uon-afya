@@ -1,0 +1,5 @@
+.DS_Store
+*-preview.jpg
+.env
+.env.*
+node_modules/
